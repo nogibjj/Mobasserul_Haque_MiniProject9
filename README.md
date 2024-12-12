@@ -1,3 +1,4 @@
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nogibjj/Mobasserul_Haque_MiniProject9/blob/main/collab_main.ipynb)
 [![Test](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/test.yml)
 [![Lint](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/lint.yml)
 [![Install](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/install.yml)
