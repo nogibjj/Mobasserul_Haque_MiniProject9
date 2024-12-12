@@ -1,75 +1,95 @@
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nogibjj/Mobasserul_Haque_MiniProject9/blob/main/collab_main.ipynb)
-[![Test](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/test.yml)
-[![Lint](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/lint.yml)
-[![Install](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/install.yml)
-[![Format](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_IndividualProject1/actions/workflows/format.yml)
+[![CICD](https://github.com/nogibjj/Mobasserul_Haque_MiniProject9/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_MiniProject9/actions/workflows/cicd.yml)
 
-# Pandas Descriptive Script Mini Project
-This project performs exploratory data analysis (EDA) on a dataset containing customer purchasing behavior, providing insights into various patterns and relationships using pandas, Matplotlib, and Seaborn.
+# Cloud-Hosted Notebook Data Manipulation
 
-## Demo Video
-The demo video for this **Individual Project 1**, is uploaded to this repo:  
-[Demo video](demo.mp4)
-[Demo Video YT link](https://www.youtube.com/watch?v=Egb39YCRVog)
+This project demonstrates data manipulation and exploratory data analysis (EDA) on a sample dataset using a cloud-hosted Jupyter Notebook on Google Colab. The notebook integrates with GitHub for version control and sharing.
+
+---
+## Project Overview
+
+This project performs EDA on a dataset containing customer purchasing behavior using Python libraries like pandas, Matplotlib, and Seaborn. It also highlights the seamless integration between Google Colab and GitHub for cloud-based data analysis and collaboration.
+
+## Collab Jupyter Notebook:
+
+[https://colab.research.google.com/github/nogibjj/Mobasserul_Haque_MiniProject9/blob/main/collab_main.ipynb](https://colab.research.google.com/github/nogibjj/Mobasserul_Haque_MiniProject9/blob/main/collab_main.ipynb)
+
+---
 
 ## File Structure 
 ```
-Mobasserul_Haque_IndividualProject1/
 ├── .devcontainer/
 │   ├── devcontainer.json
 │   └── Dockerfile
 ├── .github/
-│   ├── workflows/format.yml
-│   ├── workflows/install.yml
-│   ├── workflows/lint.yml
-│   ├── workflows/test.yml
-├── mylib/
-|   ├── __init__.py
+│   └── workflows/
+│       └── cicd.yml
+├── myLib/
+│   ├── __pycache__/
+│   ├── __init__.py
 │   ├── lib.py
 ├── bar_plot_average_purchase_amt_by_regions.png
-├── Correlation_matrix_columns
-├── Customer Purchasing Behaviors.csv                                        
-├── Histogram_column_distributions.png                                      
-├── Loyalty_score_by_region_boxplot.png                                  
-├── main.ipynb                                   
-├── main.py                             
-├── Makefile                  
-├── README.md                       
+├── collab_main.ipynb
+├── Correlation_matrix_columns.png
+├── Customer Purchasing Behaviors.csv
+├── demo.mp4
+├── Histogram_column_distributions.png
+├── Loyalty_score_by_region_boxplot.png
+├── main.ipynb
+├── main.py
+├── Makefile
+├── README.md
 ├── requirements.txt
-├── scatter_plot_hue_by_region
-├── scatter_plot_trend_line   
-├── summary_report.md                  
+├── scatter_plot_hue_by_region.png
+├── scatter_plot_trend_line.png
+├── summary_report.md
 ├── test_lib.py
 ├── test_main.py
-├── test_report.md                          
+├── test_report.md                        
 ```
+##  Setup Instructions
+
+### 1. Access Google Colab
+
+- Go to [Google Colab](https://colab.research.google.com).
+- Sign in with your Google account.
+- Open the notebook directly by clicking the "Open in Colab" badge above or follow these steps:
+  - Create a new notebook by selecting **File > New Notebook**.
+  - Alternatively, open an existing notebook from your GitHub repository.
+
+### 2. Clone the Repository in Colab
+
+To access all project files in Colab, clone the repository by running the following in a notebook cell:
+
+```bash
+!git clone https://github.com/nogibjj/Mobasserul_Haque_MiniProject9.git
+```
+Navigate to the Project Directory
+
+```bash
+%cd Mobasserul_Haque_MiniProject9
+```
+### 3. Install Dependencies
+
+Install the required Python libraries using the `requirements.txt` file:
+
+```bash
+!pip install -r requirements.txt
+```
+### Run the Notebook
+
+Open the `collab_main.ipynb` file in Colab and run all the cells to execute the data manipulation and visualization tasks.
+
+![collab_main_notebook1](collab_main_notebook1.PNG)
+![collab_main_notebook2](collab_main_notebook2.PNG)
 
 
-## Table of Content
-- [Overview](#overview)
-- [Source](#source)
-- [About Dataset](#about-dataset)
-  - [Dataset Columns](#dataset-columns)
-- [Features](#features)
-- [Summary Statistics](#summary-statistics)
-- [Data Visualization](#data-visualization)
-- [Setup](#setup)
-  - [Development Environment (Dev Container)](#development-environment-dev-container)
-  - [Makefile](#makefile)
-  - [GitHub Actions](#github-actions)
-- [Usage](#usage)
-  - [Histograms](#histograms)
-  - [Scatter Plot with Hue](#scatter-plot-with-hue)
-  - [Box Plot by Category](#box-plot-by-category)
-  - [Correlation Heatmap](#correlation-heatmap)
-  - [Scatter Plot with Trend Line](#scatter-plot-with-trend-line)
-  - [Bar Plot by Category](#bar-plot-by-category)
-- [Running Tests](#running-tests)
-- [Dependencies](#dependencies)
-- [License](#license)
+---
+## Features
 
-## Overview
-This project focuses on analyzing customer purchasing behavior using a dataset in CSV format. It generates various statistical summaries and visualizations to help understand trends, relationships, and distributions in the data.
+- **Summary Statistics**: Summary statistics of customer purchasing data.
+- **Data Visualizations**: Including histograms, scatter plots, box plots, and correlation heatmaps.
+- **Google Colab Integration**: Run Jupyter notebooks in the cloud.
 
 ## Source
 The dataset used in this project is **Customer Purchasing Behaviors**, which can be found on Kaggle:  
@@ -85,18 +105,6 @@ The dataset used in this project is **Customer Purchasing Behaviors**, which can
 - **purchase_frequency**: Frequency of customer purchases (number of times per year).
 - **region**: The region where the customer lives (North, South, East, West).
 - **loyalty_score**: Customer's loyalty score (a value between 0-100).
-
-This dataset includes information on customer profiles and their purchasing behaviors. 
-The data features columns for user ID, age, annual income, purchase amount, loyalty score, region, and purchase frequency. It is intended for analyzing customer segmentation and loyalty trends, and can be used for various machine learning and data analysis tasks related to customer behavior and market research.
-
-## Features
-- Display summary statistics, including median, range, and variance.
-- Visualize data distributions with histograms.
-- Plot scatter plots with categories (hue).
-- Compare distributions across categories using box plots.
-- Analyze correlations between numerical variables with a heatmap.
-- Create scatter plots with trend lines for relationship analysis.
-- Generate bar plots comparing categorical data.
 
 ## Summary Statistics
 The `summary_statistics` function displays key metrics like the median, range, and variance for each numerical column.
@@ -131,102 +139,30 @@ Below are sample visualizations produced by the project:
 - **Bar Plot of Average Purchase Amount by Region:**
   ![Visualization](bar_plot_average_purchase_amt_by_regions.png)
 
-## Setup
+## Continuous Integration (CI)
 
-### Development Environment (Dev Container)
-This project includes a development container setup, enabling you to develop in a fully configured environment. The container is based on the official Python image and installs all necessary dependencies.
+The repository includes a GitHub Actions CI pipeline for automated testing, linting, and build checks.
 
-To use the development container, ensure you have Docker installed and a supported code editor like VSCode. The editor will prompt you to "Reopen in Container" when the project is loaded.
+To view the status, navigate to the **Actions** tab on GitHub.
 
-### Makefile
-The repository includes a `Makefile` to simplify the setup and execution of key commands.
+---
 
-- Install dependencies:
-    ```bash
-    make install
-    ```
+## Collaborate and Share
 
-- Run linting checks using `pylint`:
-    ```bash
-    make lint
-    ```
+- Save your notebook changes to GitHub by selecting **File > Save a copy in GitHub** from Colab.
+- Push updates directly to your GitHub repository.
 
-- Run tests:
-    ```bash
-    make test
-    ```
 
-- Clean up the environment:
-    ```bash
-    make clean
-    ```
 
-### GitHub Actions
-This repository is equipped with GitHub Actions for continuous integration (CI). The workflow runs linting and testing automatically upon each push or pull request.
 
-To view the status of the CI pipeline, navigate to the **Actions** tab of your repository on GitHub.
 
-## Usage
 
-### Histograms
-The `plot_histograms` function generates histograms for specified columns in the dataset, displaying the distribution of values. The histograms are saved as images and embedded in the summary report. 
 
-To use this function, you can call it with the following code:
 
-```python
-plot_histograms(df, ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'], output_report)
-```
-This will produce histograms for the columns `age`, `annual_income`, `purchase_amount`, and `purchase_frequency`, showing the distribution of values for each. The generated histogram images are saved as `Histogram_column_distributions.png` and are included in the summary report.
 
-### Scatter Plot with Hue
 
-The `plot_scatter_with_hue` function visualizes the relationship between two specified columns, colored by a categorical hue. The scatter plot is saved as an image and embedded in the summary report.
 
-To use this function, you can call it with the following code:
 
-```python
-plot_scatter_with_hue(df, 'annual_income', 'purchase_amount', 'region', output_report)
-```
-This will generate a scatter plot showing the relationship between `annual_income` and `purchase_amount`, with different colors representing the `region`. The generated scatter plot image is saved as `scatter_plot_hue_by_region.png` and is included in the summary report.
 
-### Box Plot by Category
 
-The `plot_box_by_category` function compares the distribution of a numerical column across different categories using a box plot. The box plot is saved as an image and embedded in the summary report.
-
-To use this function, you can call it with the following code:
-
-```python
-plot_box_by_category(df, 'region', 'loyalty_score', output_report)
-```
-This will generate a box plot comparing the `distribution of loyalty_score` across different `regions`. The generated box plot image is saved as `Loyalty_score_by_region_boxplot.png` and is included in the summary report.
-
-### Correlation Heatmap
-The `plot_correlation_heatmap` function visualizes the correlation matrix between specified numerical columns using a heatmap. The heatmap is saved as an image and embedded in the summary report.
-
-To use this function, you can call it with the following code:
-
-```python
-plot_correlation_heatmap(df, ['purchase_amount', 'purchase_frequency', 'loyalty_score'], output_report)
-```
-This will generate a heatmap showing the correlation matrix for `purchase_amount`, `purchase_frequency`, and `loyalty_score`. The generated heatmap image is saved as `Correlation_matrix_columns.png` and is included in the summary report.
-
-### Scatter Plot with Trend Line
-The `plot_scatter_with_trend` function visualizes the relationship between two specified columns with a trend line to show the overall trend. The scatter plot with the trend line is saved as an image and embedded in the summary report.
-
-To use this function, you can call it with the following code:
-
-```python
-plot_scatter_with_trend(df, 'annual_income', 'purchase_amount', output_report)
-```
-This will generate a scatter plot showing the relationship between `annual_income` and `purchase_amount`, with a trend line included. The generated scatter plot image with the trend line is saved as `scatter_plot_trend_line.png` and is included in the summary report.
-
-### Bar Plot by Category
-The `plot_bar_by_category` function compares the average values of a numerical column across different categories using a bar plot. The bar plot is saved as an image and embedded in the summary report.
-
-To use this function, you can call it with the following code:
-
-```python
-plot_bar_by_category(df, 'region', 'purchase_amount', output_report)
-```
-This will generate a bar plot comparing the `average purchase_amount by region`. The generated bar plot image is saved as `bar_plot_average_purchase_amt_by_regions.png` and is included in the summary report.
 
